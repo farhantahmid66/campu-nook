@@ -1,0 +1,6 @@
+/* Tablet and up */
+@media (min-width:700px){.grid{grid-template-columns:repeat(2,1fr)} .cats{grid-template-columns:repeat(3,1fr)} .hero h1{font-size:2.6rem}}
+/* Desktop: show full nav */
+@media (min-width:900px){.menu-btn{display:none} .nav{display:flex!important;gap:1.4rem;width:auto} .grid{grid-template-columns:repeat(3,1fr)} .cats{grid-template-columns:repeat(5,1fr)}}
+/* Phones: turn table rows into stacked cards */
+@media (max-width:699px){.compare thead{position:absolute;left:-999px} .compare tr{display:block;margin-bottom:1rem;border:1px solid var(--line)} .compare td{display:flex;justify-content:space-between;gap:1rem;border:0;border-bottom:1px solid var(--line)} .compare td::before{content:attr(data-label);font-weight:700} .pc{grid-template-columns:1fr}}
